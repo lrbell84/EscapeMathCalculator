@@ -5,28 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape Math Calculator</title>
+    <script src="https://kit.fontawesome.com/1e17087087f17.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="section-container">
-      <h1>Escape Math Calculator</h1>
-      <input type="text" id="num1" name="num1" />
-      <input type="text" id="op" name="op" />
-      <input type="text" id="num2" name="num2" />
-      <br />
-      <input type="button" value="Solve" onclick="calc()" />
+    <main class="main">
+      <h1 class="appTitle">Escape Math Calculator</span>.<span></span>
+      <div class="result-container">
+        <span id="calc"></span> 
+        <span id="result"></span>
+      </div>
 
-      <p id="result" name="r1">
-        <br />
-      </p>
-      <div class="container">
-        <button class ="clear">AC</button>
-        <display id="display"></display></div>
+      <div class="key-container">
+        <button class ="clear">C</button>
+        <div class="key"><i class="fa-backspace"></i></div>
+        <button class ="clear">%</button>
         <button class="division">÷</button>
       </div>
 
       <div class2 ="container">
-        <button class="four">4</button>
+        <button class="seven">7</button>
         <button class="eight">8</button>
         <button class="nine">9</button>
         <button class="multiply">*</button>
@@ -36,18 +34,18 @@
         <button class="four">4</button>
         <button class="five">5</button>
         <button class="six">6</button>
-        <button class="subtract">-</button>
+        <button class="plus">+</button>
       </div>
 
       <div class4 = "container">
         <button class="one">1</button>
         <button class="two">2</button>
         <button class="three">3</button>
-        <button class="plus">+</button>
+        <button class="subtract">-</button>
       </div>
 
       <div class5 = "container">
-        <button class="decimal">.</button>
+        <button class="double-00">00</button>
         <button class="zero">0</button>
         <button class="equalTo">=</button>
       </div>

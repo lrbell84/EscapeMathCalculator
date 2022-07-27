@@ -1,15 +1,6 @@
-
-/* Added diminisions on my calculator and shadowing to make it stand out */
-.section-container {
-    max-width: 400px;
-    margin: 10vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17 rgba 153, 153, 153, 1;
-}
-/* Aligned text display to the right,  */
-#display {
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    font-size: 25px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Robusto+Mono:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=styles.css.map */
