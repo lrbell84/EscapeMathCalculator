@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <form>
+    <section>
       <h1>Escape Math Calculator</h1>
       <input type="text" id="num1" name="num1" />
       <input type="text" id="op" name="op" />
@@ -19,35 +19,37 @@
       <p id="result" name="r1">
         <br />
       </p>
-      <div>
-        <button>AC</button>
-        <button>÷</button>
+      <div class="container">
+        <button class ="clear">AC</button>
+        <display id="display"></display></div>
+        <button class="division">÷</button>
       </div>
 
-      <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>*</button>
-      </div>
-      <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+      <div class2 ="container">
+        <button class="four">4</button>
+        <button class="eight">8</button>
+        <button class="nine">9</button>
+        <button class="multiply">*</button>
       </div>
 
-      <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>+</button>
+      <div class3 = "container">
+        <button class="four">4</button>
+        <button class="five">5</button>
+        <button class="six">6</button>
+        <button class="subtract">-</button>
       </div>
 
-      <div>
-        <button>.</button>
-        <button>0</button>
-        <button>=</button>
+      <div class4 = "container">
+        <button class="one">1</button>
+        <button class="two">2</button>
+        <button class="three">3</button>
+        <button class="plus">+</button>
+      </div>
+
+      <div class5 = "container">
+        <button class="decimal">.</button>
+        <button class="zero">0</button>
+        <button class="equalTo">=</button>
       </div>
     </form>
     <script src="script.js"></script>
