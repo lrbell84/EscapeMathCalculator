@@ -14,4 +14,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $bg--dark;
+    color: $text-color--dark;
+}
+
+.main {
+    width: 350px;
+    background-color: $bg-calc--dark;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .appTitle{
+        align-self: center;
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 2px;
+
+        span {
+            color: $primary-color
+        }
+    }
+    .result-container {
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .key-container{
+        background-color: $bg-key-container--dark;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px 0;
+    }
 }

@@ -11,4 +11,39 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0F0F0F;
+  color: #c2c2c2;
+}
+
+.main {
+  width: 350px;
+  background-color: #151515;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main .appTitle {
+  align-self: center;
+  margin-top: 20px;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.main .appTitle span {
+  color: #ff3c39;
+}
+.main .result-container {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main .key-container {
+  background-color: #1A1A1A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 0;
 }/*# sourceMappingURL=styles.css.map */
