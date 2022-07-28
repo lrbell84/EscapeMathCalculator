@@ -5,52 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Escape Math Calculator</title>
-    <script src="https://kit.fontawesome.com/1e17087087f17.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3f05fb3fae.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="main">
-      <span class="appTitle">Escape Math Calculator<span>.</span></span>
       <div class="result-container">
-        <span id="calc">0</span> 
-        <span id="result">0</span>
+        <span class="app-title">Escape Math Calculator<span>.</span></span>
+        <div>
+          <span name="calc" id="calc">0</span>
+          <span name="result" id="result">0</span>
+        </div>
       </div>
-
-      <div class="key-container">
+      <div class="keys">
         <div class="row">
-        <div class ="key">C</div>
-        <div class="key"><i class="fa-solid fa-delete-left"></i>
-        <div class ="key">%</div>
-        <div class="key">/</div>
+          <div class="key lighten" id="clear">C</div>
+          <div class="key lighten" id="backspace">
+            <i class="fa-solid fa-delete-left"></i>
+            <div class="key lighten" id="percentage" onclick="Numbers('/100*')">
+              %
+            </div>
+            <div class="key" id="Division" onclick="Numbers('/')">/</div>
+          </div>
+          <div class="row">
+            <div class="key">7</div>
+            <div class="key">8</div>
+            <div class="key">9</div>
+            <div class="key">*</div>
+          </div>
+        </div>
+        <div class="key-container">
+          <div class="row">
+            <div class="key">4</div>
+            <div class="key">5</div>
+            <div class="key">6</div>
+            <div class="key">+</div>
+          </div>
+        </div>
+        <div class="key-container">
+          <div class="row">
+            <div class="key">1</div>
+            <div class="key">2</div>
+            <div class="key">3</div>
+            <div class="key">-</div>
+          </div>
+        </div>
+        <div class="key-container">
+          <div class="row">
+            <div class="key">00</div>
+            <div class="key">0</div>
+            <div class="key">=</div>
+          </div>
+        </div>
       </div>
-
-      <div class ="row">
-        <div class="key">7</div>
-        <div class="key">8</div>
-        <div class="key">9</div>
-        <div class="key">*</div>
-      </div>
-
-      <div class = "row">
-        <div class="key">4</div>
-        <div class="key">5</div>
-        <div class="key">6</div>
-        <div class="key">+</div>
-      </div>
-
-      <div class = "row">
-        <div class="key">1</div>
-        <div class="key">2</div>
-        <div class="key">3</div>
-        <div class="key">-</div>
-      </div>
-
-      <div class = "row">
-        <div class="key">00</div>
-        <div class="key">0</div>
-        <div class="key">=</div>
-      </div>
-     </div> 
     </div>
     <script src="script.js"></script>
   </body>

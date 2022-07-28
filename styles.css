@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Roboto:ital,wght@1,500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
 .main {
   width: 350px;
   background-color: #151515;
-  border-radius: 25px;
+  border-radius: 100px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -33,7 +33,7 @@ body {
   color: #ff3c39;
 }
 .main .result-container {
-  height: 150px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
