@@ -1,64 +1,203 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Roboto:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #461d74;
+    color: #ffffff;
+  }
+  #calc {
+    color: #535353;
+  }
+  #result {
+    color: #ffffff;
+  }
+  .lighten {
+    color: rgba(255, 255, 255, 0.368627451);
+  }
+  .lighten:hover {
+    color: rgba(255, 255, 255, 0.7058823529);
+  }
+  .title {
+    letter-spacing: 2px;
+    font-size: 14px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .title span {
+    color: rgba(212, 145, 212, 0.6509803922);
+  }
+  .key:hover {
+    background-color: #2F2F2F;
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.055);
+    transition: 0.3s;
+    flex-direction: column;
+  }
+  .main {
+    box-shadow: none !important;
+  }
+  .result {
+    background-color: rgba(212, 145, 212, 0.6509803922);
+  }
+  .keys {
+    background-color: #9f086d;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    color: #1a1a1a;
+    background-color: #ebebeb;
+  }
+  #calc {
+    color: #a3a3a3;
+  }
+  #result {
+    color: #1a1a1a;
+  }
+  .key:hover {
+    background-color: #ebebeb;
+    box-shadow: 0 0 0 5px rgba(235, 235, 235, 0.452);
+    transition: 0.3s;
+    flex-direction: column;
+  }
+  .lighten {
+    color: rgba(26, 26, 26, 0.4117647059);
+  }
+  .lighten:hover {
+    color: rgba(26, 26, 26, 0.8);
+  }
+  .title {
+    letter-spacing: 2px;
+    font-size: 14px;
+    color: #1a1a1a;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .title span {
+    color: rgba(212, 145, 212, 0.6509803922);
+  }
+  .result {
+    background-color: #fafafa;
+  }
+  .keys {
+    background-color: #ffffff;
+  }
+}
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto Mono";
+  font-family: "Roboto Mono", monospace;
 }
 
 body {
   min-height: 100vh;
+  min-width: -webkit-fill-available;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0F0F0F;
-  color: #c2c2c2;
 }
 
 .main {
   width: 350px;
-  background-color: #151515;
-  border-radius: 100px;
-  display: flex;
-  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 10px 40px 0 rgba(174, 174, 198, 0.171);
   overflow: hidden;
 }
-.main .appTitle {
-  align-self: center;
-  margin-top: 20px;
-  font-size: 14px;
-  letter-spacing: 2px;
-}
-.main .appTitle span {
-  color: #ff3c39;
-}
-.main .result-container {
+.main .result {
   height: 200px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 20px;
   flex-direction: column;
 }
-.main .key-container {
-  background-color: #1A1A1A;
+.main .result div {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.main .result div #calc {
+  border: none;
+  width: 100%;
+  background: none;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 10px;
+  line-break: anywhere;
+  padding: 0 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .result div #result {
+  border: none;
+  width: 100%;
+  background: none;
+  font-size: 40px;
+  text-align: center;
+  outline: none;
+}
+.main .keys {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px 0;
 }
-.main .key-container .row {
+.main .keys .row {
   display: flex;
 }
-.main .key-container .row .key {
+.main .keys .row .key {
   width: 60px;
   height: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin: 10px;
+  align-items: center;
+  margin: 10px 10px;
+  cursor: pointer;
   font-size: 18px;
   border-radius: 100px;
-  background-color: aliceblue;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.main .keys .row .key#Division {
+  color: rgba(212, 145, 212, 0.6509803922);
+}
+.main .keys .row .key#multiply {
+  color: rgba(212, 145, 212, 0.6509803922);
+}
+.main .keys .row .key#sum {
+  color: rgba(212, 145, 212, 0.6509803922);
+}
+.main .keys .row .key#subtraction {
+  color: rgba(212, 145, 212, 0.6509803922);
+}
+.main .keys .row .key#equal {
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
+}
+
+@media screen and (max-width: 425px) {
+  .main {
+    width: 100%;
+    border-radius: 0;
+  }
+  body {
+    align-items: flex-start;
+  }
 }/*# sourceMappingURL=styles.css.map */
