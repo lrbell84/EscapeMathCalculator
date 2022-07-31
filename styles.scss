@@ -214,22 +214,53 @@ body {
 
                 &#Division {
                     color: $primary;
+                   
                 }
 
-                &#multiply {
+                &#multiplication {
                     color: $primary;
+                    background-color: #d491d4a6;
+                    border-radius: 100px;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);
                 }
 
-                &#sum {
+                &#addition {
                     color: $primary;
+                    background-color: #d491d4a6;
+                    border-radius: 100px;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);
+                    
+                }
+
+                &#zeroZero {
+                    color: $primary;
+                    background-color: #d491d4a6;
+                    border-radius: 100px;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);
+                }
+
+                &#point{
+                    color: $primary;
+                    background-color: #d491d4a6;
+                    border-radius: 100px;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);
                 }
 
                 &#subtraction {
                     color: $primary;
+                    background-color: #d491d4a6;
+                    border-radius: 100px;
+                    color: #ffffff;
+                    box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);
+                    
                 }
 
                 &#equal {
-                    background-color: #d491d4a6;
+                    background-color: #ee35c0a6;
                     border-radius: 100px;
                     color: #ffffff;
                     box-shadow: 0 0 0 5px rgb(255 64 57 / 18%);

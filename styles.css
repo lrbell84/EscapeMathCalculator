@@ -177,17 +177,43 @@ body {
 .main .keys .row .key#Division {
   color: rgba(212, 145, 212, 0.6509803922);
 }
-.main .keys .row .key#multiply {
+.main .keys .row .key#multiplication {
   color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
 }
-.main .keys .row .key#sum {
+.main .keys .row .key#addition {
   color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
+}
+.main .keys .row .key#zeroZero {
+  color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
+}
+.main .keys .row .key#point {
+  color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
 }
 .main .keys .row .key#subtraction {
   color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(212, 145, 212, 0.6509803922);
+  border-radius: 100px;
+  color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
 }
 .main .keys .row .key#equal {
-  background-color: rgba(212, 145, 212, 0.6509803922);
+  background-color: rgba(238, 53, 192, 0.6509803922);
   border-radius: 100px;
   color: #ffffff;
   box-shadow: 0 0 0 5px rgba(255, 64, 57, 0.18);
