@@ -127,6 +127,7 @@ $bgResult--light: #fafafa;
 }
 
 body {
+    background-image: url("./images/image.png");
     min-height: 100vh;
     min-width: -webkit-fill-available;
     background-repeat: no-repeat;
@@ -135,7 +136,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+   
+}            
 
 .main {
     width: 350px;
@@ -145,7 +147,7 @@ body {
 
 
     .result {
-        height: 200px;
+        height: 150px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -247,77 +249,3 @@ body {
         align-items: flex-start;
     }
 }
-
-// mport url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,500&family=Roboto:ital,wght@1,500&display=swap');
-// @import "./color.scss";
-
-// * {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-//     font-family: "Roboto Mono";
-   
-// }
-
-// body {
-//     min-height: 100vh;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     background-color: $bg--dark;
-//     color: $text-color--dark;
-// }
-
-// .main {
-//     width: 350px;
-//     background-color: $bg-calc--dark;
-//     border-radius: 100px;
-//     display: flex;
-//     flex-direction: column;
-//     overflow: hidden;
-
-//     .result-container{
-//         align-self: center;
-//         margin-top: 20px;
-//         font-size: 14px;
-//         letter-spacing: 2px;
-
-//         span {
-//             color: $primary-color
-//         }
-//     }
-//     .result-container {
-//         height: 200px;
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         flex-direction: column;
-//     }
-
-//     .key-container{
-//         background-color: $bg-key-container--dark;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         justify-content: center;
-//         padding: 20px 0;
-
-//         .row {
-//             display: flex;
-
-//             .key{
-//                 width: 60px;
-//                 height: 60px;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: center;
-//                 flex-direction: column;
-//                 margin: 10px;
-//                 font-size: 18px;
-//                 border-radius: 100px;
-//                 background-color: aliceblue;
-//             }
-        
-//         }
-//     }
-// }

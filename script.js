@@ -1,5 +1,5 @@
-let calculation;
-let operations;
+let calculation = "";
+let operations = 0;
 
 function insert(key) {
 // add the corresponding item pushed by button to the calculator screen
@@ -29,7 +29,7 @@ function insert(key) {
  
  function docalculations(total, index) {
 	length = operations.length
-	total = calculate(parseInt(total), operations[index], parseInt(operations[index+1])); 
+	total = calculate(Number(total), operations[index], Number(operations[index+1])); 
 	console.log("length =" +length);
 	console.log("total =" +total);
 	console.log("index =" +index);
