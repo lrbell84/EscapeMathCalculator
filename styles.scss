@@ -12,7 +12,7 @@ $color--light: #1a1a1a;
 $bgKeys--light: #ffffff;
 $bgResult--light: #fafafa;
 
-
+// Here's my stylesheet. It shows how I incorporated all of my variables, nested rules, inline imports and also I choose to use flexbox for my styling.
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -269,7 +269,7 @@ body {
         }
     }
 }
-
+// Here I used my media inquiry to make my html responsive
 @media screen and (max-width:425px) {
     .main {
         width: 100%;

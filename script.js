@@ -2,40 +2,40 @@ let calculation = "";
 let operations = 0;
 
 const insert = (key) => {
-// add the corresponding item pushed by button to the calculator screen. When you click on a key it will insert the number or operator
+// Here I added a corresponding item pushed by button to the calculator screen. When you click on a key it will insert the number or operator
 	console.log(document.getElementById('calc').innerHTML)
 	document.getElementById('calc').innerHTML =  document.getElementById('calc').innerHTML + key;
  }
  
  const clearCalculator = () => {
-// just clear the value in the calculator
+// Here is an arrow function that clears the value in the calculator
     document.getElementById('calc').innerHTML = " ";
 	document.getElementById('result').innerHTML = " ";
  }
  
  const calc = () => {
-// set pattern for regex, search the special characters for operations
+// Here I used regex, to set a pattern to search the special characters for operations
 	let pattern = /([\+\-\/\*]+)/
 	calculation = document.getElementById('calc').innerHTML;
-// split the calculation into numbers and operators
+// Here I split the calculation into numbers and operators by using .split() method
 	operations = calculation.split(pattern);
 	console.log(operations);
-// get the first number then use recursion to process the rest (calling itself inside of the function)
+// Here I used the .shift method to remove the first number. Then I used the recursive process (calling itself inside of the function) I used an If statement to prevent an infinte loop.
 	let total = Number(operations.shift())
 	console.log("total = " + total);
 	
 	total = docalculations(total, 0);
 	document.getElementById('result').innerHTML = total;
  }
-
+//Here I did the calculations for the first value & second value
  const docalculations = (total, index) => {
 	length = operations.length
 	total = calculate(Number(total), operations[index], Number(operations[index+1])); 
 	console.log("length =" +length);
 	console.log("total =" +total);
 	console.log("index =" +index);
+
 	if ( index+2 < length ) {
-// as long as there are two more commands in the array we will process this again to do the next operations
 		total = docalculations(total, index+2);		
 		return Number(total);
 	} else {
@@ -47,7 +47,8 @@ const insert = (key) => {
 	console.log("first value" + typeof(firstValue) + " value is " + firstValue);
 	console.log("operation" + typeof(operator) + " value is " + operator);
 	console.log("second value" + typeof(secondValue) + " value is " + secondValue);
-// switch to do all of the operations that can appear in the table (PSEUDOCODE)
+
+// Here I'm using a PSEUDOCODE to switch all of the operations that can appear in the table 
 	switch(operator) {
 		case '+':
 			total = firstValue + secondValue;
