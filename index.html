@@ -21,34 +21,34 @@
     </div>
     <div class="keys">
       <div class="row">
-        <div class="key lighten" id="clear" onclick="clearButton()">C</div>
+        <div class="key lighten" id="clear" onClick="clearCalculator()">C</div>
         <div class="key lighten" id="backspace"><i class="fas fa-backspace"></i></div>
-        <div class="key lighten" id="percentage" onclick="Numbers('/100*')">%</div>
-        <div class="key" id="Division" onclick="Numbers('/')">/</div>
+        <div class="key lighten" id="percentage" onclick="insert('/100*')">%</div>
+        <div class="key" id="Division" onclick="insert('/')">/</div>
       </div>
       <div class="row">
-        <div class="key" id="7" onclick="Numbers('7')">7</div>
-        <div class="key" id="8" onclick="Numbers('8')">8</div>
-        <div class="key" id="9" onclick="Numbers('9')">9</div>
-        <div class="key" id="multiply" onclick="Numbers('*')">*</div>
+        <div class="key" id="7" onClick="insert('7')">7</div>
+        <div class="key" id="8" onClick="insert('8')">8</div>
+        <div class="key" id="9" onClick="insert('9')">9</div>
+        <div class="key" id="multiplication" onClick="insert('*')">*</div>
       </div>
       <div class="row">
-        <div class="key" id="4" onclick="Numbers('4')">4</div>
-        <div class="key" id="5" onclick="Numbers('5')">5</div>
-        <div class="key" id="6" onclick="Numbers('6')">6</div>
-        <div class="key" id="sum" onclick="Numbers('+')">+</div>
+        <div class="key" id="4" onClick="insert('4')">4</div>
+        <div class="key" id="5" onClick="insert('5')">5</div>
+        <div class="key" id="6" onClick="insert('6')">6</div>
+        <div class="key" id="addition" onClick="insert('+')">+</div>
       </div>
       <div class="row">
-        <div class="key" id="1" onclick="Numbers('1')">1</div>
-        <div class="key" id="2" onclick="Numbers('2')">2</div>
-        <div class="key" id="3" onclick="Numbers('3')">3</div>
-        <div class="key" id="subtraction" onclick="Numbers('-')">-</div>
+        <div class="key" id="1" onClick="insert('1')">1</div>
+        <div class="key" id="2" onClick="insert('2')">2</div>
+        <div class="key" id="3" onClick="insert('3')">3</div>
+        <div class="key" id="subtraction" onClick="insert('-')">-</div>
       </div>
       <div class="row">
-        <div class="key lighten" id="zeroZero" onclick="Numbers('00')">00</div>
-        <div class="key" id="0" onclick="Numbers('0')">0</div>
-        <div class="key lighten" id="point" onclick="Numbers('.')">.</div>
-        <div class="key" id="equal" onclick="calc()">
+        <div class="key lighten" id="zeroZero" onclick="insert('00')">00</div>
+        <div class="key" id="0" onclick="insert('0')">0</div>
+        <div class="key lighten" id="point" onClick="insert('.')">.</div>
+        <div class=" key" id="equal" onclick="calc()">
           =
         </div>
       </div>
@@ -58,55 +58,3 @@
 </body>
 
 </html>
-
-<!-- <body>
-  <div class="main">
-    <span class="app-title">Escape Math Calculator<span>.</span></span>
-    <div class="result-container">
-      <span name="calc" id="calc">0</span>
-      <span name="result" id="result">0</span>
-    </div>
-  </div>
-  <div class="keys">
-    <div class="row">
-      <div class="key lighten" id="clear">C</div>
-      <div class="key lighten" id="backspace">
-        <i class="fa-solid fa-delete-left"></i>
-        <div class="key lighten" id="percentage" onclick="Numbers('/100*')">
-          %
-        </div>
-        <div class="key" id="Division" onclick="Numbers('/')">/</div>
-      </div>
-
-      <div class="row">
-        <div class="key" id="7">7</div>
-        <div class="key" id="8">8</div>
-        <div class="key" id="9">9</div>
-        <div class="key" id="7">*</div>
-      </div>
-
-      <div class="row">
-        <div class="key" id="4">4</div>
-        <div class="key" id="5">5</div>
-        <div class="key" id="6">6</div>
-        <div class="key" id="multiply">+</div>
-      </div>
-
-      <div class="row">
-        <div class="key" id="1">1</div>
-        <div class="key" id="2">2</div>
-        <div class="key" id="3">3</div>
-        <div class="key" id="subtraction" onclick="Numbers">-</div>
-      </div>
-
-      <div class="row">
-        <div class="key lighten">00</div>
-        <div class="key" id="0" onclick="Number('0')">0</div>
-        <div class="key" id="equal" onclick="calc()">=</div>
-      </div>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-
-</html> -->
