@@ -2,13 +2,13 @@ let calculation = "";
 let operations = 0;
 
 const insert = (key) => {
-// Here I added a corresponding item pushed by button to the calculator screen. When you click on a key it will insert the number or operator
+// Here I added a function, when clicked by a button, will display on the calculator screen. 
 	console.log(document.getElementById('calc').innerHTML)
 	document.getElementById('calc').innerHTML =  document.getElementById('calc').innerHTML + key;
  }
  
  const clearCalculator = () => {
-// Here is an arrow function that clears the value in the calculator
+// Here's a function that clears the value in the calculator
     document.getElementById('calc').innerHTML = " ";
 	document.getElementById('result').innerHTML = " ";
  }

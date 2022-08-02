@@ -15,18 +15,19 @@
     <div class="result">
       <span class="title">Escape Math Calculator<span>.</span></span>
       <div>
-        <span name="calc" id="calc">0</span>
-        <span name="result" id="result">0</span>
+        <span name="calc" id="calc"></span>
+        <span name="result" id="result"></span>
       </div>
     </div>
     <div class="keys">
       <div class="row">
         <div class="key lighten" id="clear" onClick="clearCalculator()">C</div>
-        <div class="key lighten" id="backspace"><i class="fas fa-backspace"></i></div>
+        <div class="key lighten" id="backspace"><i class="fas fa-backspace"></i>
+        </div>
         <div class="key lighten" id="percentage" onclick="insert('/100*')">%</div>
         <div class="key" id="Division" onclick="insert('/')">/</div>
       </div>
-      <!-- Here are my Button Keys, I Used onClick attribute to return a value in a function. -->
+      <!-- Here are my Button Keys. I Used onClick attribute to return a value in a function. -->
       <div class="row">
         <button class="key" id="7" onClick="insert('7')">7</button>
         <button class="key" id="8" onClick="insert('8')">8</button>
